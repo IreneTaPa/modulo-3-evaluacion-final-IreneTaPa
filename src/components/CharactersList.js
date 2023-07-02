@@ -5,10 +5,11 @@ import CharacterCard from './CharacterCard';
 const CharactersList = ({ charactersList }) => {
   console.log(charactersList);
   const charactersLi = charactersList.map((eachCharacter) => (
-    <li className="characters">
+    <li key={eachCharacter.id} className="characters">
       <CharacterCard eachCharacter={eachCharacter} />
     </li>
   ));
+
   return <ul className="characters__list">{charactersLi}</ul>;
 };
 
