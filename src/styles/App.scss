@@ -1,3 +1,32 @@
 div {
     background-color: black;
 }
+
+h1 {
+    color: greenyellow; 
+}
+.background {
+    background-color: rgb(57, 179, 179);
+}
+.characters__list {
+    display: flex; 
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+}
+.characters {
+    list-style: none;
+}
+
+.character__img {
+    width: 150px;
+}
+
+.character__name {
+    color: white;
+    padding: 5px;
+}
+.character__text {
+    color: white;
+    padding: 5px; 
+}
