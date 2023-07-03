@@ -3,6 +3,8 @@ import '../styles/App.scss';
 import getDataFromApi from './services/api';
 import ContactList from './CharactersList';
 import Filters from './Filters';
+import Header from './Header';
+import Footer from './Footer';
 
 const App = () => {
   //variable de estado de array vacío (de momento)
@@ -27,9 +29,7 @@ const App = () => {
 
   return (
     <div>
-      <header>
-        <h1>RICK AND MORTY</h1>
-      </header>
+      <Header />
       <main>
         <section className="form">
           <Filters
@@ -44,6 +44,7 @@ const App = () => {
           <ContactList charactersList={filteredCharacters} />
         </section>
       </main>
+      <Footer />
     </div>
   );
 };
