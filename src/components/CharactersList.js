@@ -9,8 +9,13 @@ const CharactersList = ({ charactersList }) => {
       <CharacterCard eachCharacter={eachCharacter} />
     </li>
   ));
-
-  return <ul className="characters__list">{charactersLi}</ul>;
+  if (charactersLi.length === 0) {
+    return (
+      <h3 className="error__text">¡VAYA! Ese personaje/especie no existe </h3>
+    );
+  } else {
+    return <ul className="characters__list">{charactersLi}</ul>;
+  }
 };
 
 export default CharactersList;
