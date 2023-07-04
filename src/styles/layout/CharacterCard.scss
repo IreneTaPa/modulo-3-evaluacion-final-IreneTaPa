@@ -1,0 +1,37 @@
+@import '../core/variables.scss';
+
+.characters {
+    border: 3px solid $yellow;
+    list-style: none;
+    text-decoration: none;
+}
+a:link {
+    text-decoration: none;
+}
+
+.background {
+    background-color: $blue;
+}
+
+.character__img {
+    width: 200px;
+}
+
+.character__name {
+    color: $white;
+    padding: 5px 10px 0 15px;
+    line-height: 15px;
+    margin-bottom: 2px;
+    font-family: $font1;
+    
+    
+}
+
+.character__text {
+    color:$white;
+    padding: 5px 0 0 15px;
+    margin-top: 0;
+    margin-bottom: 0x;
+    font-family: $font2; 
+    
+}

@@ -1,5 +1,5 @@
 import footerImg from '../images/rick.png';
-import '../styles/Footer.scss';
+import '../styles/layout/Footer.scss';
 
 const Footer = () => {
   return <img className="footer__img" src={footerImg} alt="Rick and Morty" />;

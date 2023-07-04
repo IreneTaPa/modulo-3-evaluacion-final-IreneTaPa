@@ -1,3 +1,5 @@
+import '../styles/layout/Filters.scss';
+
 const Filters = ({
   searchByName,
   searchBySpecie,
@@ -14,16 +16,22 @@ const Filters = ({
   };
 
   return (
-    <form>
+    <form className="form">
       <label className="label__text" htmlFor="">
         Personaje por nombre
       </label>
-      <input type="text" value={searchByName} onInput={handleSearchByName} />
+      <input
+        type="text"
+        className="input"
+        value={searchByName}
+        onInput={handleSearchByName}
+      />
       <label className="label__text" htmlFor="">
         Personaje por especie
       </label>
       <input
         type="text"
+        className="input"
         value={searchBySpecie}
         onInput={handleSearchBySpecie}
       />

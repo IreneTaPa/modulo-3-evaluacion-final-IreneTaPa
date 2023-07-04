@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-
+import '../styles/layout/CharacterCard.scss';
 //Pinta el contenido de cada <li>
 
 const CharacterCard = ({ eachCharacter }) => {

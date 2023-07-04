@@ -1,7 +1,7 @@
 //le pasamos el array de objetos para que lo pinte. Solo hace el map
 
 import CharacterCard from './CharacterCard';
-
+import '../styles/layout/CharactersList.scss';
 const CharactersList = ({ charactersList }) => {
   console.log(charactersList);
   const charactersLi = charactersList.map((eachCharacter) => (
