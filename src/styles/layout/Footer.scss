@@ -1,10 +1,18 @@
+@import '../core/variables.scss';
 .footer {
     height: 40vh;
-    color: black; 
+    color: black;
+    display: flex; 
 }
 
 .footer__img {
     width: 300px;
     display: block;
     margin: 0 auto;
+}
+
+.small {
+    color: $blue; 
+    font-size: 16px;
+    font-family: $font1;
 }
