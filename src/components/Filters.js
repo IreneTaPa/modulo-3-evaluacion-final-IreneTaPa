@@ -6,11 +6,10 @@ const Filters = ({
   setSearchByName,
   setSearchBySpecie,
 }) => {
-  //controlamos el input del nombre
   const handleSearchByName = (ev) => {
     setSearchByName(ev.target.value);
   };
-  //controlamos input de la especie
+
   const handleSearchBySpecie = (ev) => {
     setSearchBySpecie(ev.target.value);
   };
